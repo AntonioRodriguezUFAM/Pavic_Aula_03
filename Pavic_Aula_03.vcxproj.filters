@@ -18,5 +18,8 @@
     <ClCompile Include="Módulo_01_Aula_03-02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Módulo_01_Aula_04-01.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
