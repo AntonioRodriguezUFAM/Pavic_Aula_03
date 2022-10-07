@@ -27,7 +27,7 @@ int main() {
 	//std::ofstream image;
 	ofstream image;
 
-	image.open("./images/RGB-01.ppm");
+	image.open("./images/RGB-02.ppm");
 
 	if (image.is_open()) {
 
@@ -38,27 +38,26 @@ int main() {
 
 		// Header
 		image << "P3" << endl;
-		image << "3 2" << endl;
+		image << "100 100" << endl;
 		image << "255" << endl;
 
-		// Image Body
+		// Image Body  -  Size 100 x 100
 
-		/* # The part below is the image data : RGB triplets
-			255   0   0  # red
-			0	255   0  # green
-			0   0	255  # blue
-			255 255   0  # yellow
-			255 255 255  # white
-			0   0   0  # black
-			*/
-
+		/* # The part below is the image data : RGB triplet */
+	/*
 		image << "255 0 0" << endl;		// Red
 		image << "0 255  0" << endl;	//Green
 		image << "0 0 255" << endl;		//Blue
 		image << "255 255 0" << endl;	//yellow
 		image << "255 255 255" << endl; //white
 		image << "0 0 0" << endl;		//black
+		*/
 
+		for (int ImgH = 0; ImgH < 100; ImgH++) {
+			for(int ImhV = 0; ImhV < 100; ImhV++) {
+				image << "255 0 100" << endl;		// Red
+			}
+		}
 	}
 
 
