@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pavic_Aula_03", "Pavic_Aula_03.vcxproj", "{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Debug|x64.ActiveCfg = Debug|x64
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Debug|x64.Build.0 = Debug|x64
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Debug|x86.ActiveCfg = Debug|Win32
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Debug|x86.Build.0 = Debug|Win32
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Release|x64.ActiveCfg = Release|x64
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Release|x64.Build.0 = Release|x64
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Release|x86.ActiveCfg = Release|Win32
+		{03D77DEE-864D-4CD9-B844-C5A32FD0FE48}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E8C97FB3-1CF6-4634-A8C0-1640C64C62B9}
+	EndGlobalSection
+EndGlobal
