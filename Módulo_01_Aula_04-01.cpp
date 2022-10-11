@@ -1,6 +1,6 @@
 
 // Módulo 01 Aula 04  Task 01 - 2022
-// Greate a filter
+// Greate a filter for PPM images
 
 /* 
 * Antonio Souto Rodriguez
@@ -12,6 +12,8 @@ P3           # "P3" means this is a RGB color image in ASCII
 */
 
 #include<iostream>
+#include<string>
+
 #include<fstream> // Read and Write Images
 
 using namespace std;
@@ -25,7 +27,7 @@ int main() {
 
 	// open images
 	image.open("./images/monument01.ppm");
-	newimage.open("./images/monument01_Output.ppm");
+	newimage.open("./images/monument_Output_filter_RGB.ppm");
 
 	// Copy over header
 	// P3  # "P3" means this is a RGB color image in ASCII
@@ -48,16 +50,62 @@ int main() {
 	newimage << RGB << endl;
 
 	// The part below is the image data : RGB triplets
-	//255   0   0  # red
+	// String="255">> 255 =int   0   0  # red
 
+	// Reading Strings
 	string red = "", green = "", blue = "";
 
+	// Inte Values 
+	//int intRed =0, intGreen=0, intBlue=0;
+
+
+	// String to Int!!!!
+
 	while (!image.eof()) {
+
+		// 3 Reading Strings
+		// RGB - 195 209 222
+
 		image >> red;
 		image >> green;
 		image >> blue;
 
-		newimage << red << " " << green << " " << blue << " ";
+		// Convert Strings into Ints
+
+		//stringstream redstream(red);
+
+		int intRED = stoi(red);
+		int intGreen = stoi(green);
+		int intBlue = stoi(blue);
+
+		// Filter - Red 
+
+		if (intRED + 30 > 255) {
+			intRED = 255;
+		}
+		else {
+			intRED += 30;
+		}
+
+		// to add a blue filter
+		if (intBlue + 50 > 255) {
+			intBlue = 255;
+		}
+		else {
+			intBlue += 50;
+		}
+
+		//to add a green filter
+		if (intGreen - 30 > 255) {
+			intGreen = 255;
+		}
+		else {
+			intGreen -= 30;
+		}
+
+		// New Images
+		//newimage << red << " " << green << " " << blue << " ";
+		newimage << intRED << " " << intGreen << " " << intBlue << " ";
 
 	}
 
